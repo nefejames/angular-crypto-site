@@ -1,0 +1,13 @@
+nav{
+  display: none;
+
+  ul{
+    display: flex;
+    gap: 8.5rem;
+  }
+
+  @media (min-width: 768px){
+    display: block
+  }
+}
+

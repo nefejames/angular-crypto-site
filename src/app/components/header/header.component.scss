@@ -1,0 +1,45 @@
+@import 'src/variables.scss';
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+
+  .logo-container{
+    .logo{
+      font-size: 2.9rem;
+    }
+
+    svg{
+      margin-right: 1rem;
+      cursor: pointer;
+    }
+  }
+
+  .cta-container{
+    display: flex;
+    gap: 2.8rem;
+    align-items: center;
+
+    a{
+      font-size: 1.6rem;
+    }
+
+    .btn-link{
+      outline: 1px solid $color-white;
+      padding: 1.2rem 2.2rem;
+      border-radius: $border-radius;
+    }
+  }
+
+  @media (min-width: 768px){  
+    svg{
+      display: none;
+     
+    }
+  }
+}
+
+
+

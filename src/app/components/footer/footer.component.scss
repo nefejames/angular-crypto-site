@@ -1,0 +1,63 @@
+@import 'src/variables.scss';
+
+footer{
+  background: $color-primary;
+  border-top: 1px solid $color-gray;
+  padding: 6rem 0;
+
+  *{
+    color: $color-white;
+  }
+
+  p,li{
+    color: $color-primary-light-2;
+  }
+
+  .footer-wrapper{
+
+    @media (min-width: 768px){
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .newsletter-section{
+    .copy{
+      width: 60%;
+    }
+    button{  
+      width: 9.4rem;
+      height: 6.1rem;
+      margin-top: 1rem;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: $color-white;
+      background: $color-primary;
+      border-radius: $border-radius;
+    }
+  }
+
+
+  .footer-links-grid{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    .footer-column{
+      h3, li{
+        margin-bottom: 1rem;
+      }
+    }
+
+    @media (min-width: 768px){
+      width: 60%;
+      gap: 0;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}

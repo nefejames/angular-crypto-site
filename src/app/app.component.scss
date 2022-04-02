@@ -1,0 +1,112 @@
+@import 'src/variables.scss';
+
+section{
+  padding: 5rem 0;
+
+  @media (min-width: 768px){
+    padding: 8rem 0;
+  }
+}
+
+// HERO SECTION STYLES
+.hero-section {
+  background: $color-primary;
+  min-height: 100vh;
+  
+  *{
+    color: $color-white;
+  }
+
+  .hero-content{
+    margin-top: 5rem;
+
+    img{
+      width: 100%;
+    }
+
+    .copy{
+      p{
+        color: $color-primary-light-2;
+      }
+    }
+  }
+
+  @media (min-width: 768px){
+    .hero-content{
+      img {
+        margin-bottom: 0;
+      }
+
+      .copy{
+        width: 70%;
+      }
+    }
+  }
+}
+
+// FEATURES SECTION STYLES
+.features-section {
+  @media (min-width: 768px) {
+    .copy {
+      h1,p {
+        width: 80%;
+      }
+    }
+  }
+}
+
+// TESTIMONIAL SECTION STYLES
+.testimonial-section{
+  border-top: 1px solid $color-gray;
+
+  img{
+    width: 70%;
+  }
+
+  span{
+    color: $color-primary;
+  }
+
+  @media (min-width: 768px){
+    img{
+      width: 30%;
+    }
+  }
+}
+
+// PRIVACY SECTION STYLES
+.privacy-section{
+  background: $color-primary-light;
+
+  p{
+    margin-bottom: 1.9rem;
+  }
+
+  @media (min-width: 768px){
+    h2{
+      width: 80%;
+    }
+
+    p{
+      width: 80%;   
+    }
+  }
+}
+
+// CTA SECTION STYLES
+.cta-section{
+  button{
+    margin-top: 1rem;
+    width: 28.9rem;
+    height: 6.1rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: $color-white;
+    background: $color-primary;
+    border-radius: $border-radius;
+  }
+}
+
