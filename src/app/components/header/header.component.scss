@@ -12,31 +12,21 @@ header{
     }
 
     svg{
-      margin-right: 1rem;
+      margin-right: 1.6rem;
       cursor: pointer;
     }
   }
 
-  .cta-container{
-    display: flex;
-    gap: 2.8rem;
-    align-items: center;
-
-    a{
-      font-size: 1.6rem;
-    }
-
-    .btn-link{
-      outline: 1px solid $color-white;
-      padding: 1.2rem 2.2rem;
-      border-radius: $border-radius;
-    }
+  a.header-cta{
+    font-size: 1.6rem;
+    outline: 1px solid $color-white;
+    padding: 1.2rem 2.2rem;
+    border-radius: $border-radius;
   }
 
   @media (min-width: 768px){  
     svg{
       display: none;
-     
     }
   }
 }
