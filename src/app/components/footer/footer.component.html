@@ -1,22 +1,10 @@
 <footer>
-  <div class="content-wrapper footer-wrapper" >
-    <!-- NEWSLETTER SECTION -->
-    <section class="newsletter-section">
-      <div class="copy">
-        <h2>Crypto.</h2>
-        <p>
-          Get insider investing and crypto resources straight to your inbox
-          every week.
-        </p>
-      </div>
-
-      <form>
-        <input type="email" />
-        <button type="submit">Join</button>
-      </form>
+  <div class="content-wrapper footer-wrapper">
+    <section class="copy">
+      <h2>Crypto.</h2>
     </section>
 
-    <div class="footer-links-grid">
+    <section class="footer-links-grid">
       <div class="footer-column" *ngFor="let footerRoute of footerRoutes">
         <h3>{{ footerRoute.linkHeading }}</h3>
         <nav>
@@ -27,6 +15,6 @@
           </ul>
         </nav>
       </div>
-    </div>
+    </section>
   </div>
 </footer>
