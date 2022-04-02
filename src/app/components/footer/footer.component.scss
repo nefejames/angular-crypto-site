@@ -14,32 +14,30 @@ footer{
   }
 
   .footer-wrapper{
-
     @media (min-width: 768px){
       display: flex;
       justify-content: space-between;
+      gap: 13rem;
     }
   }
 
-  .newsletter-section{
-    .copy{
-      width: 60%;
+  .copy{
+    width: 90%;
+
+    h2{
+      margin-bottom: 4rem;
+     
     }
-    button{  
-      width: 9.4rem;
-      height: 6.1rem;
-      margin-top: 1rem;
-      cursor: pointer;
-      border: none;
-      outline: none;
-      font-size: 1.8rem;
-      font-weight: bold;
-      color: $color-white;
-      background: $color-primary;
-      border-radius: $border-radius;
+
+    @media (min-width: 768px){
+      width: 30%;
+
+      h2{
+        margin-bottom: 0;
+      
+      }
     }
   }
-
 
   .footer-links-grid{
     flex: 1;
